@@ -359,7 +359,7 @@ def main():
     scraper = BooksToScrapeScraper(delay=0.5)
     
     # Scrape all books
-    df = scraper.scrape_all_books(max_pages=10)
+    df = scraper.scrape_all_books(max_pages=50)
     
     # Save to CSV
     filepath = scraper.save_to_csv(df)
